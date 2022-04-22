@@ -9,6 +9,7 @@ from static.logger_config import custom_logger
 db = SQLAlchemy()
 migrate = Migrate()
 
+
 logger = logging.getLogger('gunicorn.error')
 logger = custom_logger(logger)
 cors = CORS()
